@@ -7,11 +7,12 @@ import { InvalidCredentialsError } from "./errors/invalid-credentials-error";
 let usersRepository: InMemoryUsersRepository;
 let sut: AuthenticateUseCase; // SUT means System Under Test
 
-describe("Register Use Case", () => {
+describe("Authenticate use case", () => {
     beforeEach(() => {
         usersRepository = new InMemoryUsersRepository();
         sut = new AuthenticateUseCase(usersRepository);
     });
+
     it("should be able to authenticate", async () => {
         await usersRepository.create({
             name: "John Doe",
