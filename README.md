@@ -3,10 +3,10 @@ GymPass style app.
 
 ## RFs (Functional Requirements)
 
-- [ ] Users must be able to sign up;
+- [x] Users must be able to sign up;
 - [x] Users must be able to authenticate;
 - [x] Users must be able to access the profile of a logged-in user;
-- [ ] Users must be able to access the number of check-ins performed by the logged-in user;
+- [x] Users must be able to access the number of check-ins performed by the logged-in user;
 - [x] Users must be able to access their check-in history;
 - [ ] Users must be able to search for nearby gyms;
 - [ ] Users must be able to search for gyms by name;
