@@ -18,7 +18,7 @@ export class PrismaCheckInsRepository implements CheckInsRepository {
         const startOfTheDay = dayjs(date).startOf("date");
         const endOfTheDay = dayjs(date).endOf("date");
 
-        const checkIn = prisma.checkIn.findFirst({
+        const checkIn = await prisma.checkIn.findFirst({
             where: {
                 user_id: userId,
                 created_at: {
